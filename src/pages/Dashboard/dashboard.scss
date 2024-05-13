@@ -1,0 +1,50 @@
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+
+    .card-box-samagra {
+        background: #fff;
+        width: 19.24%;
+        padding:20px 25px;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        margin-right: 14px;
+        min-height: 120px;
+        &:nth-child(5n){ margin-right: 0px;}
+
+        &.active {
+            width: 58.6%;
+            background: #E35F3E;
+            color: #fff;
+            height: 300px;
+
+            .active-none{display: none;}
+            .active-block{display: block !important;}
+        }
+
+        @media (max-width: 1699px) and (min-width: 1400px) {
+            width: 19.13%;
+            padding: 15px 18px;
+            min-height: 105px;
+        }
+        @media (max-width: 1399px) and (min-width: 1199px) {
+            width: 18.9%;
+            padding: 15px 16px;
+            margin-bottom: 20px;
+            min-height: 90px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 500;      
+            
+            @media (max-width: 1699px) and (min-width: 1400px) {
+                font-size: 16px;
+            }
+            @media (max-width: 1399px) and (min-width: 1199px) {
+                font-size: 14px;
+            }
+            
+        }
+    }
+}
