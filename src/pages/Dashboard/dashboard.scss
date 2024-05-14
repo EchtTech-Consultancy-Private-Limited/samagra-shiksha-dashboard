@@ -2,24 +2,87 @@
     display: flex;
     flex-wrap: wrap;
 
+    &.row-active {
+        .card-box-samagra {
+            width: 18.9%;
+            min-height: 80px;
+
+            &:nth-child(5n) {
+                margin-right: 14px
+            }
+
+            @media (max-width: 1399px) and (min-width: 1199px) {
+                width: 18.7%;
+                min-height: 66px;
+            }
+        }
+    }
+
     .card-box-samagra {
         background: #fff;
         width: 19.24%;
-        padding:20px 25px;
+        padding: 20px 25px;
         border-radius: 20px;
         margin-bottom: 30px;
         margin-right: 14px;
         min-height: 120px;
-        &:nth-child(5n){ margin-right: 0px;}
+
+        &:nth-child(5n) {
+            margin-right: 0px;
+        }
+
+        .after-active-card {
+            display: none;
+        }
 
         &.active {
             width: 58.6%;
             background: #E35F3E;
             color: #fff;
-            height: 300px;
+            // min-height: 280px;
 
-            .active-none{display: none;}
-            .active-block{display: block !important;}
+            // @media (max-width: 1699px) and (min-width: 1199px) {
+            //     height:205px;
+            // }
+
+            .active-none {
+                display: none;
+            }
+
+            .active-block {
+                display: block !important;
+            }
+
+            .after-active-card {
+                display: flex;
+                margin-top: 25px;
+
+                @media (max-width: 1699px) and (min-width: 1199px) {
+                    margin-top: 15px;
+                }
+            }
+
+            .samagra-inner-card {
+                background: #DD5939;
+                padding: 17px 20px;
+                margin-bottom: 20px;
+                border-radius: 16px;
+                min-height: 76px;
+
+                @media (max-width: 1699px) and (min-width: 1199px) {
+                    padding: 10px 15px;
+                    min-height: 55px;
+                }
+
+                p {
+                    font-size: 14px;
+                    font-weight: 300;
+
+                    @media (max-width: 1699px) and (min-width: 1199px) {
+                        font-size: 12px;
+                    }
+                }
+            }
         }
 
         @media (max-width: 1699px) and (min-width: 1400px) {
@@ -27,6 +90,7 @@
             padding: 15px 18px;
             min-height: 105px;
         }
+
         @media (max-width: 1399px) and (min-width: 1199px) {
             width: 18.9%;
             padding: 15px 16px;
@@ -36,15 +100,16 @@
 
         p {
             font-size: 18px;
-            font-weight: 500;      
-            
+            font-weight: 500;
+
             @media (max-width: 1699px) and (min-width: 1400px) {
                 font-size: 16px;
             }
+
             @media (max-width: 1399px) and (min-width: 1199px) {
-                font-size: 14px;
+                font-size: 12px;
             }
-            
+
         }
     }
 }
