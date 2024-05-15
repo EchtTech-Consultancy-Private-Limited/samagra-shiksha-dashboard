@@ -142,8 +142,8 @@
 }
 
 .map-sec-h {
-    z-index: 1;
-    position:absolute;
+    z-index: 2;
+    position: absolute;
     width: 38%;
     height: 100%;
 }
@@ -164,7 +164,7 @@
 }
 
 .bg-img {
-    background-image: url('../../assets/images/bg_img.png') !important;
+    background-image: url('../../assets/images/bg_img.svg') !important;
 }
 
 .main-card-home::after {
@@ -256,6 +256,7 @@ img.login-img {
         width: 400px;
         padding-top: 31px !important;
     }
+
     @media (max-width: 1399px) and (min-width: 1199px) {
         width: 348px;
         padding-top: 0px !important;
@@ -281,6 +282,7 @@ img.login-img {
             padding: 65px 40px 75px;
             width: 400px;
         }
+
         @media (max-width: 1399px) and (min-width: 1199px) {
             width: 350px;
             padding: 60px 40px 70px;
@@ -306,6 +308,7 @@ img.login-img {
             margin-bottom: 25px;
             margin-top: 15px;
         }
+
         @media (max-width: 1399px) and (min-width: 1199px) {
             margin-bottom: 15px;
             margin-top: 10px;
@@ -321,5 +324,24 @@ img.login-img {
         padding: 10px;
     }
 
+
+}
+
+img.growth-arrow-img {
+    z-index: 1;
+    position: fixed;
+    right: -1%;
+    top: 20%;
+    width: 920px;
+
+    @media (max-width: 1699px) and (min-width: 1400px) {
+        top: 22%;
+        width: 735px;
+    }
+
+    @media (max-width: 1399px) and (min-width: 1199px) {
+        top: 22%;
+        width: 612px;
+    }
 
 }

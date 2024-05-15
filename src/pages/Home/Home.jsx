@@ -1,5 +1,6 @@
 import React from 'react'
-import teacher from '../../assets/images/teachers-shikha.png'
+import teacher from '../../assets/images/teachers-shikha.svg'
+import growtharrow from '../../assets/images/Growth_curve.svg'
 import Arrowdown from '../../assets/images/arrow-lower.svg'
 import { Link } from 'react-router-dom'
 export default function Home() {
@@ -44,7 +45,7 @@ export default function Home() {
                                 <div className="container h-100">
                                     <div className="row h-100">
                                         <div className="col-md-12">
-                                            <div className="login-card">                                                
+                                            <div className="login-card">
                                                 <div className='card-div'>
                                                     <h2 className="login-text-m">
                                                         Login In
@@ -67,9 +68,16 @@ export default function Home() {
                                 </div>
                             </section>
                         </div>
+
+                        {/* growth arrow */}
+                        <img src={growtharrow} alt="growth-arrow" className='growth-arrow-img' />
+
                     </div>
                 </div>
             </div>
+
+
+
         </section>
 
 

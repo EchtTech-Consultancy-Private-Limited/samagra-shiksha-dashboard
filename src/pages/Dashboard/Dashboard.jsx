@@ -1,5 +1,6 @@
 import React from 'react';
 import './dashboard.scss';
+import growtharrow from '../../assets/images/Growth_curve.svg'
 import { Link } from 'react-router-dom';
 
 export default function Dashboard() {
@@ -81,6 +82,8 @@ export default function Dashboard() {
                   </div>
                </div>
             </div>
+             {/* growth arrow */}
+             {/* <img src={growtharrow} alt="growth-arrow" className='growth-arrow-img' /> */}
          </section>
       </>
    )

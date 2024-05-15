@@ -32,6 +32,21 @@
         }
     }
 
+    .view-data-tab{
+        .nav-tabs .nav-link {            
+            padding: 7px 20px;
+
+            @media (max-width:1599px) and (min-width: 1361px) {
+                padding: 7px 12px;
+            }
+    
+            @media (max-width:1360px) and (min-width: 1024px) {
+                padding: 7px 12px;
+            }
+    
+        }
+    }
+
     .nav-tabs .nav-link {
         color: #212121;
         font-size: 14px;
@@ -39,7 +54,7 @@
         background: transparent;
         margin-bottom: 8px;
         border: 1px solid #E2E2E2;
-        margin-right: 12px;
+        margin-right: 0px;
         border-radius: 40px;
 
         @media (max-width:1599px) and (min-width: 1361px) {
@@ -347,4 +362,54 @@
 
 table tr, table tr td {
     border-color:#efeaea !important;
+}
+
+.table-text-i button#uncontrolled-tab-example-tab-table {
+    display: flex;
+    align-items: center;
+
+    &.active::before {
+        filter: invert(1);
+    }
+
+    &:before {
+        content: "";
+        background: url('../../assets/images/table_cells.png');
+        width: 15px;
+        height: 15px;
+        background-size: cover;
+        display: block;
+        margin-right: 6px;       
+    }
+}
+.table-text-i button#uncontrolled-tab-example-tab-graph {
+    display: flex;
+    align-items: center;
+    &.active::before {
+        filter: invert(1);
+    }
+    &:before {
+        content: "";
+        background: url('../../assets/images/circular-graphic.png');
+        width: 15px;
+        height: 15px;
+        background-size: cover;
+        display: block;
+        margin-right: 6px;
+    }
+}
+
+.infrastructure-main-card .tab-for-graph .impact-box-content-education {
+    background: #faf6ed;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    min-height: 183px;
+    padding: 20px;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+.infrastructure-main-card .tab-for-graph .impact-box-content-education h2.heading-sm {
+    font-size: 26px;
+    margin-right: 0;
+    font-weight: 600;
 }
