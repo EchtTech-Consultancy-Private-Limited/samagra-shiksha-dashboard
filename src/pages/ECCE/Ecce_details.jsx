@@ -7,12 +7,13 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import Highcharts from 'highcharts'
-import HighchartsReact from 'highcharts-react-official'
+import Highcharts from 'highcharts';
+import HighchartsReact from 'highcharts-react-official';
 
 
 import { useState } from "react";
 import { useDispatch, useSelector, useEffect } from "react-redux";
+import SearchFilter from '../../components/Partial/SearchFilter';
 var breaks = [];    
 export default function Ecce_details() {
     
@@ -24,6 +25,10 @@ export default function Ecce_details() {
     const school_data = useSelector((state) => state.school);
 
     return (
+        
+        <>
+        <SearchFilter/>
+
         <section className="infrastructure-main-card p-0">
             <div className="bg-grey2 ptb-30">
                 <div className="container tab-for-graph">
@@ -301,5 +306,7 @@ export default function Ecce_details() {
                 </div>
             </div>
         </section>
+
+        </>
     )
 }
