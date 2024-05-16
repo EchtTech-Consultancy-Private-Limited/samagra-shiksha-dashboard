@@ -285,11 +285,11 @@
     z-index: 9;
 
     @media (max-width:1599px) and (min-width: 1361px) {
-        bottom: 2%;
+        bottom: 12%;
     }
 
     @media (max-width:1360px) and (min-width: 1024px) {
-        bottom: 2%;
+        bottom: 10%;
     }
 
     &.show {
@@ -409,7 +409,7 @@ table tr, table tr td {
     transition: all .3s ease-in-out;
 }
 .infrastructure-main-card .tab-for-graph .impact-box-content-education h2.heading-sm {
-    font-size: 26px;
+    font-size: 24px !important;
     margin-right: 0;
     font-weight: 600;
 }
