@@ -1323,7 +1323,7 @@ g#bmap_graphics_layer {
     }
 
     .infrastructure-main-card .tab-for-graph .tab-text-infra.download-rep {
-        padding-left: 12px;
+        padding-left: 0px;
         padding-top: 10px;
     }
 
@@ -1668,4 +1668,67 @@ div#dijit_DialogUnderlay_0 {
     border-radius: 30px;
     border-color: #113587;
     padding: 5px 25px;
+}
+
+
+@media (max-width: 991px) {
+    img.growth-arrow-img{display: none;}
+    .main-card-home:after, .main-card-home:before{display: none;}
+
+    img.login-img {
+        width: 100%;
+    }
+    .login-card .card-div {
+        background: #fff;
+        padding: 30px 22px 30px;
+        box-shadow: 10px 21px 30px rgba(0, 0, 0, 0.1607843137);
+        border-radius: 34px;
+        width: 100%;
+    }
+
+    .header-top {
+        position: relative !important;
+    }
+
+    .heading-sm {
+        font-size: 26px;
+    }
+    img.login-img {
+        padding-top: 0px !important;
+    }
+
+    .card-box-impact .col-md-12.mt-5 {
+        margin-top: 20px !important;
+    }
+    .map-sec-h{
+        position:static;
+        width: 100%;
+    }
+
+    .login-card{position: static;}
+    .login-card .card-div{margin: 50px 0;}
+    .login-card h2.login-text-m {
+        font-size: 26px;
+    }
+    .login-card input.form-control {
+        border: 1px solid #C3C3C3 !important;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 14px;
+        color: #B7B7B7;
+        margin-top: 18px;
+    }
+
+    .card-row .card-box-samagra.active {
+        width: 100%;
+        background: #E35F3E;
+        color: #fff;
+    }
+
+    .card-row.row-active .card-box-samagra, .card-row .card-box-samagra {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
 }
