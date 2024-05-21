@@ -18,7 +18,8 @@ export default function Ecce() {
             </div>
 
 
-            <div className="tab-section tab-for-graph ptb-30">
+            <div className="tab-section tab-for-graph ptb-30 p-relative">
+                            <div className="backgroung-white-bg-layer"></div>
                 <div className="container">
                     <div className="row">
                         <div className="col-ms-12">

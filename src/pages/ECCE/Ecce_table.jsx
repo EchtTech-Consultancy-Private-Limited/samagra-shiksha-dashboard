@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 
 export default function Ecce_table(props) {
     return (
-        <div className="Allreport-table-card mb-4">
+        <div className="Allreport-table-card mt-5 mb-4">
             <div className="col-md-12">
                 <TableContainer className="mt-4">
                     <Table className='table-bordered'>

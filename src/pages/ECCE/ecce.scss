@@ -49,8 +49,8 @@
 
     .nav-tabs .nav-link {
         color: #212121;
-        font-size: 14px;
-        padding: 12px 30px;
+        font-size: 15px;
+        padding: 15px 30px;
         background: transparent;
         margin-bottom: 8px;
         border: 1px solid #E2E2E2;
@@ -58,13 +58,13 @@
         border-radius: 40px;
 
         @media (max-width:1599px) and (min-width: 1361px) {
-            font-size: 12px;
-            padding: 7px 12px;
+            font-size: 13px;
+            padding: 10px 15px;
         }
 
         @media (max-width:1360px) and (min-width: 1024px) {
-            font-size: 10px;
-            padding: 7px 12px;
+            font-size: 12px;
+            padding: 8px 15px;
         }
 
     }
@@ -412,4 +412,27 @@ table tr, table tr td {
     font-size: 24px !important;
     margin-right: 0;
     font-weight: 600;
+}
+
+.p-relative{position: relative;}
+.backgroung-white-bg-layer {
+    background: #fff;
+    height: 115px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    @media (max-width:1599px) and (min-width: 1361px) {
+        height: 100px;
+    }
+
+    @media (max-width:1360px){
+        height: 84px;
+    }
+
+}
+
+.tab-for-graph ul.nav.nav-tabs{
+    position:relative;
+    z-index: 9;
 }

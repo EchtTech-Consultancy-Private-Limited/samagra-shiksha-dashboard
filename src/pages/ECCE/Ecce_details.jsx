@@ -8,21 +8,9 @@ import { AgGridReact } from "ag-grid-react";
 import "ag-grid-enterprise";
 import "ag-grid-community/styles/ag-grid.css";
 import "ag-grid-community/styles/ag-theme-quartz.css";
-import { ClientSideRowModelModule } from "@ag-grid-community/client-side-row-model";
-// import { ColumnsToolPanelModule } from "@ag-grid-enterprise/column-tool-panel";
-// import { FiltersToolPanelModule } from "@ag-grid-enterprise/filter-tool-panel";
-// import { SetFilterModule } from "@ag-grid-enterprise/set-filter";
-import { ModuleRegistry } from "@ag-grid-community/core";
-// ModuleRegistry.registerModules([
-//     ClientSideRowModelModule,
-//     ColumnsToolPanelModule,
-//     FiltersToolPanelModule,
-//     SetFilterModule,
-// ]);
 import { useState } from "react";
 
 import SearchFilter from '../../components/Partial/SearchFilter';
-import { Margin } from "@mui/icons-material";
 var breaks = [];
 
 export default function Ecce_details() {
@@ -69,7 +57,7 @@ export default function Ecce_details() {
             .then((data) => setRowData(data));
             
     }, []);
-    console.log(rowData,' ddddd')
+
     return (
 
         <>

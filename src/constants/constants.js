@@ -1,7 +1,7 @@
 export const filterItemsStatePerPage = 10;
 export const filterItemsYearPerPage = 4;
 
-export const urls = ['/all-reports', '/school-reports', '/teacher-reports', '/infrastructure-reports3013'];
+export const urls = ['/ecce','/ecce_details'];
 
 // export const nationalWiseName = "All India/National";
 export const nationalWiseName = "All India/National";

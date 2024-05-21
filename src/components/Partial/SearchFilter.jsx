@@ -88,26 +88,6 @@ export default function SearchFilter() {
   const mapDisValue = window.localStorage.getItem("map_district_name");
   const mapBlockValue = window.localStorage.getItem("block");
 
-  //console.log(mapBlockValue, "map");
-  // const [jsonstateData, setJsonStateData] = useState([]);
-  // useEffect(() => {
-  //   filterObj = structuredClone(schoolFilter);
-  // }, [schoolFilter])
-  // useEffect(() => {
-  //   setJsonStateData(mapJsonData.stateData);
-  //   const queryString = window.location.href;
-  //   const urlParams = new URLSearchParams(queryString.replace('#/', ""));
-  //   const paramValue = urlParams.get('type');
-  //   if (paramValue === "table") {
-  //     dispatch(handleViewDataByShow(true));
-  //   } else if (location.pathname === "/") {
-  //     dispatch(handleViewDataByShow(true));
-  //   }
-  //   else {
-  //     dispatch(handleViewDataByShow(false));
-  //   }
-
-  // }, [mapJsonData.stateData]);
 
 
   useEffect(() => {
@@ -128,14 +108,12 @@ export default function SearchFilter() {
       dispatch(handleShowFilter(false))
     };
     const targetElement = window.document.getElementById("content");
-    // targetElement.removeEventListener("click", handleEvent);
-    // targetElement.addEventListener("click", function (e) {
-    //   handleEvent();
-    // });
+ 
 
-    return () => {
-      targetElement.removeEventListener("click", handleEvent);
-    };
+    // return () => {
+    //   targetElement.removeEventListener("click", handleEvent);
+    // };
+
   }, []);
 
   const handleSchoolFilterYear = (e) => {
