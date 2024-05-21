@@ -104,10 +104,10 @@ const Header = () => {
 
                 <div className="header-top-skipwrap">
                   <ul>
-                    <li><Link to='/help-line-numbers'>{t("helpline_numbers")}</Link></li>
+                    <li><Link to='#'>{t("helpline_numbers")}</Link></li>
                     <li><Link to='#' onClick={handleClickScroll}>{t("skip_to_navigation")}</Link></li>
                     <li><Link to='#' onClick={handleClickScroll}>{t("skip_to_main_content")}</Link></li>
-                    <li><Link to='/screen-reader-access'>{t("screen_reader_access")}</Link></li>
+                    <li><Link to='#'>{t("screen_reader_access")}</Link></li>
                   </ul>
                 </div>
 
@@ -175,7 +175,7 @@ const Header = () => {
                   <div className="menu-switch-tab ordernav-sm-3">
                     <SlidingTabBar/>
                   </div>
-                  <div class="ordernav-sm-2"></div>
+                  <div className="ordernav-sm-2"></div>
                                 
                 </div>
 

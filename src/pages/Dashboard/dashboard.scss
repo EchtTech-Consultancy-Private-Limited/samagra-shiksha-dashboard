@@ -6,6 +6,7 @@
         .card-box-samagra {
             width: 18.9%;
             min-height: 80px;
+            cursor: pointer;
 
             &:nth-child(5n) {
                 margin-right: 14px
@@ -61,6 +62,8 @@
                     margin-top: 15px;
                 }
             }
+
+            p{color: #fff !important;}
 
             .samagra-inner-card {
                 background: #DD5939;
