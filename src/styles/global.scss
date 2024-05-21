@@ -1539,7 +1539,7 @@ table {
     padding-bottom: 0 !important;
 }
 
-input[class^=ag-][type=text]:focus {
+input[className^=ag-][type=text]:focus {
     border-bottom-color: transparent !important;
 }
 
@@ -1729,6 +1729,10 @@ div#dijit_DialogUnderlay_0 {
     .card-row.row-active .card-box-samagra, .card-row .card-box-samagra {
         width: 100%;
         margin-bottom: 20px;
+        margin-right: 0;
     }
-
+    .tab-for-graph .nav-tabs .nav-link{
+        font-size: 10px;
+        padding: 9px 14px;
+    }
 }

@@ -9,7 +9,7 @@ export default function Dashboard() {
          <section className="ptb-30 bg-grey">
             <div className="container">
                <div className="row">
-                  <h2 class="heading-blue mb-5">Welcome to Samagra Shiksha Dashboard </h2>
+                  <h2 className="heading-blue mb-5">Welcome to Samagra Shiksha Dashboard </h2>
                   <div className="col-md-12">
                      <div className="card-row row-active">
                         <div className="card-box-samagra active">

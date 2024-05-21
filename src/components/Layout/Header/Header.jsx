@@ -175,7 +175,7 @@ const Header = () => {
                   <div className="menu-switch-tab ordernav-sm-3">
                     <SlidingTabBar/>
                   </div>
-                  <div class="ordernav-sm-2"></div>
+                  <div className="ordernav-sm-2"></div>
                                 
                 </div>
 
