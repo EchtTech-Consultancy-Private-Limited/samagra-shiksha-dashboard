@@ -54,8 +54,7 @@ export default function Ecce_details() {
     const onGridReady = useCallback((params) => {
         fetch("https://www.ag-grid.com/example-assets/olympic-winners.json")
             .then((resp) => resp.json())
-            .then((data) => setRowData(data));
-            
+            .then((data) => setRowData(data));            
     }, []);
 
     return (
@@ -138,12 +137,7 @@ export default function Ecce_details() {
                                     </Tab>
                                     <Tab eventKey="table" title="Table">
                                         <div style={containerStyle} className="mt-4">
-                                            <div
-                                                style={gridStyle}
-                                                className={
-                                                    "ag-theme-quartz"
-                                                }
-                                            >
+                                            <div style={gridStyle} className={"ag-theme-quartz"}>
                                                 <AgGridReact
                                                     rowData={rowData}
                                                     columnDefs={columnDefs}
@@ -163,10 +157,6 @@ export default function Ecce_details() {
                                                     <div className="impact-box-content-education">
                                                         <div className="text-btn-d">
                                                             <h2 className="heading-sm">Pupil Teacher Ratio</h2>
-                                                            {/* <div className='d-flex w-20'>
-                                                        <button className='view-table-btn'> <span className="material-icons-round">table_view</span> View Table </button>
-                                                        <button className='view-table-btn view-more-btn ms-1'> <span className="material-icons-round me-0">more_horiz</span></button>
-                                                    </div> */}
                                                         </div>
 
                                                         <div className="piechart-box row mt-4">
@@ -226,17 +216,12 @@ export default function Ecce_details() {
                                                                             },
                                                                             gridLineWidth: 0
                                                                         },
+                                                                       
                                                                         legend: {
-                                                                            layout: 'vertical',
-                                                                            align: 'right',
-                                                                            verticalAlign: 'top',
-                                                                            x: -150,
-                                                                            y: 0,
-                                                                            floating: true,
-                                                                            borderWidth: 1,
-                                                                            backgroundColor:
-                                                                                Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF',
-                                                                            shadow: true
+                                                                            align: 'center',
+                                                                            verticalAlign: 'bottom',
+                                                                            x: 0,
+                                                                            y: 0
                                                                         },
                                                                         credits: {
                                                                             enabled: false
