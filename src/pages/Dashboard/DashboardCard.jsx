@@ -11,7 +11,6 @@ export default function DashboardCard(props) {
         if (!target.classList.contains('card-box-samagra')) {
             return;
         }
-
         sessionStorage.setItem('handle', text);
         const elements = document.querySelectorAll('.card-box-samagra.active');
         elements.forEach(element => {
